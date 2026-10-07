@@ -12,6 +12,7 @@ public void show()
 {
 	System.out.println("welcome to frame handling session");
 	WebDriver driver=new ChromeDriver();
+	driver.manage().window().maximize();
 	driver.get("https://ui.vision/demo/webtest/frames/");
 	
 	WebElement frame1=driver.findElement(By.xpath("//frame[@src='frame_1.html']"));
